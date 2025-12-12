@@ -1,3 +1,5 @@
+/* html native elements */
+
 body {
     background-color: #757575;
 }
@@ -24,6 +26,8 @@ hr {
 
     width: 15vw;
 }
+
+/* navbar */
 
 .title {
     display: flex;
@@ -108,6 +112,8 @@ hr {
     width: 10vw;
 }
 
+/* projects */
+
 .project_box {
     display: flex;
     flex-direction: column;
@@ -145,6 +151,8 @@ hr {
 
     box-shadow: 0 18px 40px rgba(2, 6, 23, 0.55);
 }
+
+/* specific projects */
 
 .timer_title {
     font-family: "Trebuchet MS", sans-serif;
