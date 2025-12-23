@@ -1,4 +1,29 @@
 body {
     background-image: linear-gradient(90deg, rgba(36, 33, 36, 1) 0%, rgba(90, 79, 207, 1) 100%);
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
 }
 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: linear-gradient(90deg, #8EC5FC 0%, #E0C3FF 100%);
+    
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: -1;
+}
+
+body.light-mode::before {
+    opacity: 1;
+}
+
+.theme_toggle {
+    padding: 20px;
+    
+
+    z-index: 1;
+}
